@@ -1,246 +1,282 @@
 <!-- Thank that you spend your time to look at my CV-->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Resume Ewelina Tęcza</title>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="CV, Resume, Ewelina Tecza">
-        <meta name="description" content="This is my CV">
-        <meta name="author" content="Ewelina Tecza">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="icon"type="image/x-icon" href="/images/favicon.ico">
-        <!--link rel="stylesheet" href="nazwa pliku css z tego samego folderu co strona.css"-->
-        <style>
-            *{
-                box-sizing: border-box;
-            }
-            .container{
-                width: 100%;
-                height: 100%;
-                display: block;
-                position: relative;
-                overflow: hidden;
-                opacity: 0.99;
-                margin: 0;
-                font-family: Georgia, 'Times New Roman', Times, serif;
-                text-align: center;
-                font-size: 20px;
-            }
-            .container::before{
-                content: "";
-                position: absolute;
-                margin: 0;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                margin: 0;
-                z-index: -1;
-                background-image: url('/images/Bergen.jpg');
-                background-size: cover;
-                opacity: 0.4;
-                background-position: center;
-                }
-            .header{
-                display: block;
-                width: 100%;
-                height: 100%;
-                font-size: 20px;
-                padding-left: 20px;
-            }
-            #foto{
-                width:90px;
-                height:120px;
-                position: static;
-                padding: 10px;
-            }
-            .nav a{
-                display: inline-block;
-                padding-right: 15px;
-                border-right: 1px solid hsl(0,0%,40%);
-            }
-            .nav a:last-child{
-                border-right: none;
-            }
-            .nav a:link, a:visited, a:active{
-                color: black;
-                text-decoration: none;
-            }
-            .nav a:hover{
-                color:red;
-                text-decoration:underline;
-            }
-            h1, h2{
-                color: rgb(0,0,0);
-            }
-            .Education{
-                position: relative;
-                display: inline-block;
-            }
-            .Education[data-title]:hover:after{
-                content: attr(data-title);
-                background-color: aqua;
-                color: black;
-                border-radius: 5px;
-                padding: 3px;
-                position: absolute;
-                right: 0;
-                top: 110%;
-                white-space: nowrap;
-            }
-            .EducationTable table{
-                border-collapse: collapse;
-                width: 100%;
-            }
-            .EducationTable td{
-                background-color: transparent;
-                border-radius: 0;
-                padding: 10px 50px;
-                text-align: center;
-                border-bottom: 1px solid black;
-                border-top: 0;
-                border-left: 0;
-                border-right: 0;
-            }
-            .ExperienceTable th, td {
-                border:1px solid rgba(216, 230, 247, 0.8);
-                background-color: rgba(216, 230, 247, 0.8);
-                border-radius: 10px;
-                padding: 10px;
-                text-align: center;
-            }
-            .footer{
-                background-color: transparent;
-                text-align: justify;
-                font-size: smaller;
-                padding: 5px;
-            }
-            .JumpToStart{
-                width: 100%;
-                height: 20px;
-                text-align: left;
-                background: transparent;
-                transition: width 2s;
-            }
-        </style>
+
+<head>
+    <title>Resume Ewelina Tęcza</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="CV, Resume, Ewelina Tecza">
+    <meta name="description" content="This is my CV">
+    <meta name="author" content="Ewelina Tecza">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <!--link rel="stylesheet" href="nazwa pliku css z tego samego folderu co strona.css"-->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+            overflow: hidden;
+            opacity: 0.99;
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            margin: 0;
+            z-index: -1;
+            background-image: url('/images/Bergen.jpg');
+            background-size: cover;
+            opacity: 0.4;
+            background-position: center;
+        }
+
+        .header {
+            display: block;
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+            padding-left: 20px;
+        }
+
+        #foto {
+            width: 90px;
+            height: 120px;
+            position: static;
+            padding: 10px;
+        }
+
+        .nav a {
+            display: inline-block;
+            padding-right: 15px;
+            border-right: 1px solid hsl(0, 0%, 40%);
+        }
+
+        .nav a:last-child {
+            border-right: none;
+        }
+
+        .nav a:link,
+        a:visited,
+        a:active {
+            color: black;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        h1,
+        h2 {
+            color: rgb(0, 0, 0);
+        }
+
+        .Education {
+            position: relative;
+            display: inline-block;
+        }
+
+        .Education[data-title]:hover:after {
+            content: attr(data-title);
+            background-color: aqua;
+            color: black;
+            border-radius: 5px;
+            padding: 3px;
+            position: absolute;
+            right: 0;
+            top: 110%;
+            white-space: nowrap;
+        }
+
+        .EducationTable table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .EducationTable td {
+            background-color: transparent;
+            border-radius: 0;
+            padding: 10px 50px;
+            text-align: center;
+            border-bottom: 1px solid black;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+        }
+
+        .ExperienceTable th,
+        td {
+            border: 1px solid rgba(216, 230, 247, 0.8);
+            background-color: rgba(216, 230, 247, 0.8);
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: transparent;
+            text-align: justify;
+            font-size: smaller;
+            padding: 5px;
+        }
+
+        .JumpToStart {
+            width: 100%;
+            height: 20px;
+            text-align: left;
+            background: transparent;
+            transition: width 2s;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
-    <div class="header">
-        <img id="foto" src="images/foto.jpg" alt="Foto">
-        <h1></style><b>Ewelina Tęcza</b></h1>
-        <adress>Warszawa, <del>Włochy</del> Nowe Włochy</adress>
-        <p><a href="mailto:ewelinatecza87@gmail.com">ewelinatecza87@gmail.com</a><br></p>
-        <p>+48 503 404 987</p>
-        <p><a href="https://www.linkedin.com/in/ewelina-t%C4%99cza-653149b3">
-            <img src="linkedin-2.png"alt="Go to Linkedin"style="width:40px;height:40px;"></a></p>
-    </div>
-    <div class="column">
-    <div class="nav">
-        <a href="#AboutMe">About me</a>
-        <a href="#Education">Education</a>
-        <a href="#Experience">Experience</a>
-        <a href="#Language">Language</a>
-        <a href="#Interest">Interest</a>
-    </div>
-    <div id="AboutMe">
-<h2><b>About me</b></h2>
-<p>I have experience in creating <b>test documentation</b>: test plan, test scenarios, test cases, bug reports, test execution reports 
-    and knowledge of test automation (<b>Python, pytest</b>). I know <b>Selenium</b> and API REST testing. I have an ability to test the endpoints with <b>Postman</b>.    
-    I have an experience with the bug tracking system (<b>Jira</b>) and basic knowledge of <b>SQL</b>.    
-    I am a team player.    
-    I have a familiarity with <b>Agile</b> and willingness to grow in test area.</p>
-</div>
-<div data-title="Postgraduated studies"class="Education">
-<h2><b>Education</b></h2>
-<table class="EducationTable">
-    <tr>
-        <td>10.2021 - 05.2022</td>
-        <td><strong>Software Testing</strong></td>
-        <td><i>Vistula University</i></td>
-    </tr>
-</table>
-</div>
-<br>
-<br>
-<div id="Experience">
-<h2><b>Experience</b></h2>
-<table class="ExperienceTable">
-    <caption>My life &#128512</caption>
-    <tr>
-        <th>Date</th>
-        <th>Company</th>
-        <th>Position</th>
-    </tr>
-    <tr>
-        <td rowspan="4">06.2022 - </td>
-        <td rowspan="4">TestArmy Group</td>
-        <td>Copywriter:</td>
-    </tr>
-            <tr>
-                <td style="text-align:left"><a href="https://testuj.pl/blog/testy-automatyczne-w-selenium-z-wykorzystaniem-pythona/"title="Selenium"target="_blank">Article about Selenium</a></td>
-            </tr>
-            <tr>
-                <td style="text-align:left"><a href="https://testuj.pl/blog/testy-z-uzyciem-frameworka-pytest-fixture-i-parametryzacja-testu/"title="Fixtures and parametrize"target="_blank">Article about fixtures and parametrizes</a></td>
-            </tr>
-            <tr>
-                <td style="text-align:left"><a href="https://testuj.pl/blog/python-w-pracy-testera-oprogramowania-od-podstaw-do-pierwszego-testu-z-uzyciem-frameworka-pytest/"title="Base of Python"target="_blank">Article about base of Python</a></td>
-            </tr>
-    <tr>
-        <td>02.2018 - 03.2020</td>
-        <td>Silk Road, Camillas Hus, Tipo</td>
-        <td>Worker</td>
-    </tr>
-    <tr>
-        <td>08.2016 - 01.2018</td>
-        <td>W.Kruk</td>
-        <td>Manager at julewerry shop</td>
-    </tr>
-    <tr>
-        <td>01.2013 - 07.2016</td>
-        <td>Amrest</td>
-        <td>Manager at KFC</td>
-    </tr>
-    <tr>
-        <td>08.2011 - 11.2012</td>
-        <td>Skarbnica Talentów</td>
-        <td>Manager at kindergarden</td>
-    </tr>
-    <tr>
-        <td>07.2007 - 08.2011</td>
-        <td>Kolorado</td>
-        <td>Worker</td>
-    </tr>
-</table>
-</div>
-<div id="Language">
-<h2><b>Language</b></h2>
-<p>English B1</p>
-</div>
-<div id="Interest">
-<h2><b>Interest</b></h2>
-<pre><strong>I
+        <div class="header">
+            <img id="foto" src="images/foto.jpg" alt="Foto">
+            <h1>
+                </style><b>Ewelina Tęcza</b></h1>
+            <adress>Warszawa, <del>Włochy</del> Nowe Włochy</adress>
+            <p><a href="mailto:ewelinatecza87@gmail.com">ewelinatecza87@gmail.com</a><br></p>
+            <p>+48 503 404 987</p>
+            <p><a href="https://www.linkedin.com/in/ewelina-t%C4%99cza-653149b3">
+                    <img src="linkedin-2.png" alt="Go to Linkedin" style="width:40px;height:40px;"></a></p>
+        </div>
+        <div class="column">
+            <div class="nav">
+                <a href="#AboutMe">About me</a>
+                <a href="#Education">Education</a>
+                <a href="#Experience">Experience</a>
+                <a href="#Language">Language</a>
+                <a href="#Interest">Interest</a>
+            </div>
+            <div id="AboutMe">
+                <h2><b>About me</b></h2>
+                <p>I have experience in creating <b>test documentation</b>: test plan, test scenarios, test cases, bug
+                    reports, test execution reports
+                    and knowledge of test automation (<b>Python, pytest</b>). I know <b>Selenium</b> and API REST
+                    testing. I have an ability to test the endpoints with <b>Postman</b>.
+                    I have an experience with the bug tracking system (<b>Jira</b>) and basic knowledge of <b>SQL</b>.
+                    I am a team player.
+                    I have a familiarity with <b>Agile</b> and willingness to grow in test area.</p>
+            </div>
+            <div data-title="Postgraduated studies" class="Education">
+                <h2><b>Education</b></h2>
+                <table class="EducationTable">
+                    <tr>
+                        <td>10.2021 - 05.2022</td>
+                        <td><strong>Software Testing</strong></td>
+                        <td><i>Vistula University</i></td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <br>
+            <div id="Experience">
+                <h2><b>Experience</b></h2>
+                <table class="ExperienceTable">
+                    <caption>My life &#128512</caption>
+                    <tr>
+                        <th>Date</th>
+                        <th>Company</th>
+                        <th>Position</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">06.2022 - </td>
+                        <td rowspan="4">TestArmy Group</td>
+                        <td>Copywriter:</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left"><a
+                                href="https://testuj.pl/blog/testy-automatyczne-w-selenium-z-wykorzystaniem-pythona/"
+                                title="Selenium" target="_blank">Article about Selenium</a></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left"><a
+                                href="https://testuj.pl/blog/testy-z-uzyciem-frameworka-pytest-fixture-i-parametryzacja-testu/"
+                                title="Fixtures and parametrize" target="_blank">Article about fixtures and
+                                parametrizes</a></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left"><a
+                                href="https://testuj.pl/blog/python-w-pracy-testera-oprogramowania-od-podstaw-do-pierwszego-testu-z-uzyciem-frameworka-pytest/"
+                                title="Base of Python" target="_blank">Article about base of Python</a></td>
+                    </tr>
+                    <tr>
+                        <td>02.2018 - 03.2020</td>
+                        <td>Silk Road, Camillas Hus, Tipo</td>
+                        <td>Worker</td>
+                    </tr>
+                    <tr>
+                        <td>08.2016 - 01.2018</td>
+                        <td>W.Kruk</td>
+                        <td>Manager at julewerry shop</td>
+                    </tr>
+                    <tr>
+                        <td>01.2013 - 07.2016</td>
+                        <td>Amrest</td>
+                        <td>Manager at KFC</td>
+                    </tr>
+                    <tr>
+                        <td>08.2011 - 11.2012</td>
+                        <td>Skarbnica Talentów</td>
+                        <td>Manager at kindergarden</td>
+                    </tr>
+                    <tr>
+                        <td>07.2007 - 08.2011</td>
+                        <td>Kolorado</td>
+                        <td>Worker</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="Language">
+                <h2><b>Language</b></h2>
+                <p>English B1</p>
+            </div>
+            <div id="Interest">
+                <h2><b>Interest</b></h2>
+                <pre><strong>I
 
 love
 
 Testing
    
 like H<sub>2</sub>0 and 0<sup>2</sup></strong>&#128151</pre>
-</div>
-</div>
-<div class="JumpToStart">
-<a href="#foto">Jump to start</a>
-</div>
-<br>
-<br>
-<hr>
-<div class="footer">
-    <p>I agree to the processing of personal data provided in this document for realising the recruitment process pursuant
-        to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item 1000) 
-        and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 
-        on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, 
-        and repealing Directive 95/46/EC (General Data Protection Regulation).</p>
-</div>
-</div>
+            </div>
+        </div>
+        <div class="JumpToStart">
+            <a href="#foto">Jump to start</a>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <div class="footer">
+            <p>I agree to the processing of personal data provided in this document for realising the recruitment
+                process pursuant
+                to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item 1000)
+                and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April
+                2016
+                on the protection of natural persons with regard to the processing of personal data and on the free
+                movement of such data,
+                and repealing Directive 95/46/EC (General Data Protection Regulation).</p>
+        </div>
+    </div>
 </body>
+
 </html>
